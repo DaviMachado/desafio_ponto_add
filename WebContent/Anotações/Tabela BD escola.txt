@@ -1,0 +1,16 @@
+create database desafio_ponto_add;
+
+drop table escola;
+
+create table escola (
+	id	BIGINT	NOT	NULL	AUTO_INCREMENT,
+	nome		       VARCHAR(50),
+	id_endereco         BIGINT,
+	primary	key	(id),
+	CONSTRAINT fk_EscolaEndereco FOREIGN KEY (id_endereco) REFERENCES endereco (id)
+);
+
+use desafio_ponto_add;
+
+select * from escola;
+-----------------------------

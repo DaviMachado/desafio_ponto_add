@@ -1,0 +1,15 @@
+create database desafio_ponto_add;
+
+drop table turma;
+
+create table turma (
+	id	BIGINT	NOT	NULL	AUTO_INCREMENT,
+	nome		       VARCHAR(50),
+    capacidade 	   INT,
+	primary	key	(id)
+);
+
+use desafio_ponto_add;
+
+select * from turma;
+-----------------------------

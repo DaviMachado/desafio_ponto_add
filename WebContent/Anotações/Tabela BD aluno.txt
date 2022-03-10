@@ -1,0 +1,15 @@
+create database desafio_ponto_add;
+
+drop table aluno;
+
+create table aluno (
+	id	BIGINT	NOT	NULL	AUTO_INCREMENT,
+	nome		       VARCHAR(50),
+    dt_nascimento 	   DATE,
+	primary	key	(id)
+);
+
+use desafio_ponto_add;
+
+select * from aluno;
+-----------------------------

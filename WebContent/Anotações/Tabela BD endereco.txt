@@ -1,0 +1,18 @@
+create database desafio_ponto_add;
+
+drop table endereco;
+
+create table endereco (
+	id	BIGINT	NOT	NULL	AUTO_INCREMENT,
+	logradouro      VARCHAR(50),
+	complemento      VARCHAR(50),
+	bairro	        VARCHAR(30),
+	cidade		    VARCHAR(50),
+	estado          VARCHAR(3),
+	primary	key	(id)
+);
+
+use desafio_ponto_add;
+
+select * from endereco;
+-----------------------------
